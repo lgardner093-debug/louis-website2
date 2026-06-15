@@ -1,0 +1,428 @@
+/* =========================================
+   LOUIS GARDNER — MAIN STYLESHEET
+========================================= */
+
+/* GOOGLE FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap');
+
+/* =========================
+   BASE
+========================= */
+
+body {
+  margin: 0;
+  padding: 20px 24px;
+
+  background: rgb(24, 26, 27);
+  color: rgb(192, 190, 186);
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  line-height: 1.3;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.container {
+  width: 92%;
+  max-width: 680px;
+  margin:  auto;
+  
+}
+
+.container2 {
+  width: 92%;
+  max-width: 680px;
+  margin:  auto;
+  text-align: center;
+  
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+
+  text-align: center;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 38px;
+}
+
+h2 {
+  font-size: 0.8rem;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  margin-top: 40px;
+  margin-bottom: 14px;
+
+  color: rgb(192, 190, 186);
+
+  border-bottom: 1px solid #d8d4ca;
+  padding-bottom: 6px;
+  
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  color: rgb(192, 190, 186);
+  text-decoration: none;
+
+  transition: opacity 0.15s ease;
+}
+
+a:hover {
+  opacity: 0.55;
+  
+}
+
+
+/* =========================
+   HOMEPAGE
+========================= */
+
+.hero-image {
+  width: 100%;
+  max-width: 430px;
+
+  display: block;
+
+  margin: 0 auto 32px auto;
+
+  aspect-ratio: 0.8 / 1;
+  object-fit: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 36px;
+
+  margin-bottom: 30px;
+}
+
+nav a {
+ 
+  border-bottom: 1px solid rgb(130, 129, 107);
+
+  padding-bottom: 2px;
+
+
+  gap: 6px;
+
+  text-align: center;
+}
+
+nav a {
+  font-size: 1.5rem;
+  
+   margin: 9px;
+
+}
+/* =========================
+   about
+========================= */
+
+.about {
+  padding: 32px;
+    text-align: center;
+    margin-bottom: px;
+}
+
+.about p {
+    margin: 0 0 0.4em 0;
+}
+.forest{
+  width: 100%;
+  max-width: 280px;
+
+  display: block;
+
+  margin: 0 auto 32px auto;
+
+  aspect-ratio: 0.8 / 1;
+  object-fit: cover;
+}
+
+
+
+
+
+
+/* =========================
+   DISCOGRAPHY
+========================= */
+
+.grid {
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit, minmax(140px, 1fr));
+
+  gap: 10px;
+}
+
+.grid a {
+  display: block;
+}
+
+.grid img {
+  width: 400px;
+  height: 400px;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: opacity 0.15s ease;
+}
+
+
+
+.grid img:hover {
+  opacity: 0.78;
+}
+
+.credits {
+  line-height: 1.4;
+}
+
+.streaming-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* =========================
+   SHOWS
+========================= */
+
+.show {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding: 8px 0;
+
+  border-bottom: 1px solid #ddd7cb;
+}
+
+.venue {
+  flex: 1;
+}
+
+.date {
+  margin-left: 20px;
+
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   PRESS
+========================= */
+
+.press-item {
+  padding-bottom: 16px;
+  margin-bottom: 22px;
+
+  border-bottom: 1px solid #ddd7cb;
+}
+
+.press-item a {
+  font-size: 1.1rem;
+}
+
+.live{
+    width: 100%;
+  max-width: 300px;
+
+  display: block;
+
+  margin: 0 auto 32px auto;
+  padding: 15px;
+
+  aspect-ratio: 0.6 / 1;
+  object-fit: cover;
+}
+
+.forest2 {
+   width: 100%;
+  max-width: 800px;
+
+  display: block;
+
+  margin: 0 auto 0px auto;
+
+  aspect-ratio: 2.4 / 1;
+  object-fit: cover;
+}
+
+/* =========================
+   VIDEOS
+========================= */
+
+.video-section {
+  margin-bottom: 42px;
+}
+
+.video-title {
+  margin-bottom: 8px;
+
+  color: #666;
+
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  border: none;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact-image {
+  width: 100%;
+  max-width: 800px;
+
+  display: block;
+
+  margin: 0 auto 0px auto;
+  padding: 16px;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+
+.contact-item {
+  margin-bottom: 5px;
+
+  text-align: center;
+}
+
+.contact-item a {
+  font-size: 1.1rem;
+}
+
+/* =========================
+   WINGSPAN
+========================= */
+.album-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+
+  margin: 0 auto 0px auto;
+
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.release-info  {
+  
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 5px;
+
+  text-align: left;
+  
+
+  }
+
+ .streaming-links img {
+  padding: 20px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+}
+
+.streaming-links img:hover {
+    opacity: 1;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  body {
+    padding: 28px 18px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .show {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .main-nav a {
+    font-size: 0.85rem;
+    padding: 8px 6px;
+  }
+
+  .main-nav {
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .date {
+    margin-left: 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .release-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .album-image {
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .credits {
+    width: 100%;
+    max-width: 420px;
+  }
+}
