@@ -210,12 +210,18 @@ nav a {
   line-height: 1.4;
 }
 
-.streaming-links {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 20px;
+.streaming-links img {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  opacity: 0.65;
+  object-fit: contain;
 }
+
+.streaming-links img:hover {
+  opacity: 1;
+}
+
 
 /* =========================
    SHOWS
